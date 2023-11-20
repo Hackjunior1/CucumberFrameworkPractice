@@ -1,0 +1,106 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.example</groupId>
+  <artifactId>CucumberFrameworkDemo</artifactId>
+  <packaging>war</packaging>
+  <properties>
+    <maven.compiler.source>17</maven.compiler.source>
+    <maven.compiler.target>17</maven.compiler.target>
+  </properties>
+  <version>1.0-SNAPSHOT</version>
+  <name>CucumberFrameworkDemo Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  <dependencies>
+    <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+    <dependency>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-java</artifactId>
+      <version>4.12.1</version>
+    </dependency>
+    <!-- JUnit -->
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.6</version>
+      <scope>test</scope>
+    </dependency>
+
+    <!-- TestNg -->
+    <dependency>
+      <groupId>org.testng</groupId>
+      <artifactId>testng</artifactId>
+      <version>7.4.0</version>
+      <scope>test</scope>
+    </dependency>
+
+    <!-- Apache POI-->
+    <dependency>
+      <groupId>org.apache.poi</groupId>
+      <artifactId>poi</artifactId>
+      <version>5.2.3</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.poi</groupId>
+      <artifactId>poi-ooxml</artifactId>
+      <version>5.2.3</version>
+    </dependency>
+    <!-- Apache commons-csv -->
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-csv</artifactId>
+      <version>1.10.0</version>
+    </dependency>
+    <!--  Cucumber -->
+    <dependency>
+      <groupId>io.cucumber</groupId>
+      <artifactId>cucumber-java</artifactId>
+      <version>7.0.0</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>io.cucumber</groupId>
+      <artifactId>cucumber-testng</artifactId>
+      <version>7.0.0</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>io.cucumber</groupId>
+      <artifactId>cucumber-junit</artifactId>
+      <version>7.0.0</version>
+      <scope>test</scope>
+    </dependency>
+
+<!--    Extent Report -->
+    <dependency>
+      <groupId>com.aventstack</groupId>
+      <artifactId>extentreports</artifactId>
+      <version>5.0.8</version>
+    </dependency>
+    <dependency>
+      <groupId>tech.grasshopper</groupId>
+      <artifactId>extentreports-cucumber7-adapter</artifactId>
+      <version>1.1.0</version>
+    </dependency>
+
+
+
+  </dependencies>
+
+  <build>
+    <finalName>CucumberFrameworkDemo</finalName>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.0.0-M9</version>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.11.0</version>
+      </plugin>
+    </plugins>
+
+  </build>
+</project>
